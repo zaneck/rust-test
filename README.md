@@ -1,2 +1,3 @@
 # rust-test
-c-test but... in Rust
+
+This project is inspired by [c-test](https://github.com/chdemko/c-test).
