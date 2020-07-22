@@ -7,15 +7,9 @@ rust:
   - beta
   - nightly
 
-script:
-  - cd numeric
-  - cargo build --verbose --all
-  - cargo test --verbose --all
-
 jobs:
   allow_failures:
     - rust: nightly
-  fast_finish: true
 
 addons:
   apt:
