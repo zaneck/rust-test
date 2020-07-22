@@ -1,4 +1,4 @@
-use numeric::arithmetic;
+use numeric::arithmetic::arithmetic_gcd;
 
 use structopt::StructOpt;
 
@@ -14,5 +14,5 @@ struct Cli {
 fn main() {
     let args = Cli::from_args();
 
-    println!("{}", arithmetic::arithmetic_gcd(args.a, args.b));
+    println!("{}", arithmetic_gcd(args.a, args.b));
 }
