@@ -11,7 +11,7 @@ struct Cli {
     b: u32,
 }
 
-fn main() -> () {
+fn main() {
     let args = Cli::from_args();
 
     println!("{}", arithmetic::arithmetic_gcd(args.a, args.b));

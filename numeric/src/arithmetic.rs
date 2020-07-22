@@ -6,7 +6,7 @@ pub fn arithmetic_gcd(a: u32, b: u32) -> u32 {
         be = al % be;
         al = tmp;
     }
-    return al;
+    al
 }
 
 pub fn arithmetic_lcm(a: u32, b: u32) -> u32 {
