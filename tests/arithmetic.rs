@@ -2,7 +2,7 @@
 mod test {
     use numeric::arithmetic::arithmetic_gcd;
     use numeric::arithmetic::arithmetic_lcm;
-    
+
     #[test]
     fn test_gcd() {
         let a = 32;
