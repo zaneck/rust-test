@@ -1,9 +1,13 @@
-/// arithmetic_gcd computes the Greatest Common Divisor of two positive integers.
+/// Calculates the greatest common divisor (GCD) of two numbers.
 ///
-/// * `a` - first positive integer
-/// * `b` - second positive integer
+/// # Arguments
 ///
-/// the Greatest Common Divisor of 0 and 0 is computed as 0
+/// * `a` - The first number.
+/// * `b` - The second number.
+///
+/// # Returns
+///
+/// The GCD of `a` and `b`.
 pub fn arithmetic_gcd(a: u32, b: u32) -> u32 {
     let mut al = a;
     let mut be = b;
@@ -15,10 +19,16 @@ pub fn arithmetic_gcd(a: u32, b: u32) -> u32 {
     al
 }
 
-/// arithmetic_lcm computes the Least Common Multiple of two positive integers.
+/// Calculates the least common multiple (LCM) of two numbers.
 ///
-/// * `a` - first positive integer
-/// * `b` - second positive integer
+/// # Arguments
+///
+/// * `a` - The first number.
+/// * `b` - The second number.
+///
+/// # Returns
+///
+/// The LCM of `a` and `b`.
 pub fn arithmetic_lcm(a: u32, b: u32) -> u32 {
     if a & b > 0 {
         (a * b) / arithmetic_gcd(a, b)
